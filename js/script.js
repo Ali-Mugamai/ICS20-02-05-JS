@@ -16,6 +16,10 @@ function calculate() {
   const pay = hours * rate * 0.82
   const taxes = hours * rate * 0.18
   // output
-  document.getElementById('pay').innerHTML = `Your pay will be: $ ${pay.toFixed(2)}`
-  document.getElementById('governmentstake').innerHTML = `Your pay will be: $ ${taxes.toFixed(2)}`
+  document.getElementById("pay").innerHTML = `Your pay will be: $ ${pay.toFixed(
+    2
+  )}`
+  document.getElementById(
+    "governmentstake"
+  ).innerHTML = `Your pay will be: $ ${taxes.toFixed(2)}`
 }
