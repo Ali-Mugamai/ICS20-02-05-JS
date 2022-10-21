@@ -13,10 +13,9 @@ function calculate() {
   const hours = parseInt(document.getElementById("hours_worked").value)
   const rate = parseInt(document.getElementById("hourly_rate").value)
   // process
-  const pay = hours * rate * (1.0 - 0.18)
-  const taxes = hours * rate * 0.18
+  const pay = (hours * rate) * 0.82
+  const taxes = (hours * rate) * 0.18
   // output
   document.getElementById("pay").innerHTML = "your pay is: " + pay
-  document.getElementById("governmentstake").innerHTML =
-    "the government will take " + taxes
+  document.getElementById("governmentstake").innerHTML = "the government will take " + taxes
 }
