@@ -6,8 +6,17 @@
 
 "use strict"
 /**
+ * Check servie worker.
+ */
+ if (navigator.serviceWorker) {
+  navigator.serviceWorker.register("/ICS2O-PWA-Test/sw.js", {
+    scope: "/ICS2O-PWA-Test/",
+  })
+}
+/**
  * This function calculates area and perimeter of rectangle.
  */
+
 function calculate() {
   // input
   const hours = parseInt(document.getElementById("hours_worked").value)
