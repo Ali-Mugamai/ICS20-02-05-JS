@@ -8,7 +8,7 @@
 /**
  * Check servie worker.
  */
- if (navigator.serviceWorker) {
+if (navigator.serviceWorker) {
   navigator.serviceWorker.register("/ICS20-02-05-JS/sw.js", {
     scope: "/ICS20-02-05-JS/",
   })
